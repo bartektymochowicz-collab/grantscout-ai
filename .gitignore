@@ -1,0 +1,15 @@
+# Sekrety
+.env
+
+# Bazy danych
+*.db
+
+# Python
+__pycache__/
+.venv/
+
+# Node
+node_modules/
+
+# Build frontendu
+frontend/dist/
