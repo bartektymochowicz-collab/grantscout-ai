@@ -290,3 +290,11 @@ if FRONTEND_DIST.is_dir():
             return FileResponse(candidate)
         # Pozostałe ścieżki obsługuje React (SPA fallback).
         return FileResponse(INDEX_HTML)
+
+
+# ---------- Uruchomienie (np. Render: `python backend/main.py`) ----------
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host="0.0.0.0", port=int(os.getenv("PORT", "8000")))
